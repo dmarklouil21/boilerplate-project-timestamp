@@ -1,5 +1,10 @@
 // index.js
-// enable CORS so that your API is remotely testable by FCC
+// where your node app starts
+
+// init project
+var express = require('express');
+var app = express();
+
 app.use(cors({ optionsSuccessStatus: 200 })); // some legacy browsers choke on 204
 
 
